@@ -2,7 +2,7 @@
 import * as Location from 'expo-location';
 import MapView, { Marker } from "react-native-maps";
 import { locations_default } from "../../constants/locations";
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import {useLocations} from '../../hooks/Locations'
 
@@ -27,11 +27,7 @@ export const Home = () => {
         markers: locations_default
       }
       const [origin, setOrigin] = useState(null)
-      const [destination, setDestination] = useState(null)
-      const baseView = {
-        latitudeDelta: 0.01,
-        longitudeDelta: 0.01,
-      }
+
       useEffect(() => {
         (async function() {
           const {status} = await Location.requestForegroundPermissionsAsync();

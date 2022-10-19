@@ -106,7 +106,7 @@ export default function App() {
 
         })} tabBarOptions={{
           tabStyle: {backgroundColor: theme.colors.primary},
-          activeTintColor: theme.colors.lightPrimary,
+          activeTintColor: theme.colors.textPrimary,
           inactiveTintColor: theme.colors.white,
           showLabel: false,
         }} >
@@ -118,7 +118,7 @@ export default function App() {
               tabBarIcon: () => (
                 <View>
                   <View style={styles.iconTabRound} >
-                    <Icon name="map" size={26} color='#FFF' />
+                    <Icon name="map" size={26} color={theme.colors.white} />
                   </View>
                 </View>
               ),
@@ -134,15 +134,6 @@ export default function App() {
 
 
 const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    backgroundColor: '#333',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  map: {
-
-  },
   iconTabRound: {
     width: 60,
     height: 60,

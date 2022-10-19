@@ -3,16 +3,18 @@ import {Text} from '../Base'
 import * as S from './style'
 
 interface ListItemProps {
+    item: {
+        title: string;
+        description: string;
+        address: string;
+        coordinates: {
+            latitude: number;
+            longitude: number;
+        };
+        userDistance: number;
+        type: string;
+    }
 
-    title: string;
-    description: string;
-    address: string;
-    coordinates: {
-        latitude: number;
-        longitude: number;
-    };
-    userDistance: number;
-    type: string;
 
 }
 

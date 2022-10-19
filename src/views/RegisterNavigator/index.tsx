@@ -1,17 +1,14 @@
 import React, {useState} from 'react'
 import { View, StyleSheet, useWindowDimensions } from 'react-native'
-import { Button } from '../../components'
-import MaterialsIcon from 'react-native-vector-icons/MaterialIcons';
+import { Button, Logo } from '../../components'
 import { Fumi, } from 'react-native-textinput-effects';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-// import Checkbox from '@mui/material/Checkbox';
 import imageURL from '../../../assets/logo.png'
 import * as S from './style'
 import Toast from 'react-native-toast-message';
 
 const urlWebhook = 'https://eodsposkoo87q1x.m.pipedream.net'
-const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 
 export const RegisterPointScreen = () => {
@@ -79,10 +76,8 @@ export const RegisterPointScreen = () => {
       
 
     return (
-        <View style = {{flex:1,paddingHorizontal: 20, height:window.height, justifyContent:'center'}}>
-        <S.LogoContainer>
-            <S.Logo source={imageURL} />
-        </S.LogoContainer>
+        <View style = {{flex:1,paddingHorizontal: 20, height:window.height, justifyContent:'center', backgroundColor: '#FCFCFC'}}>
+            <Logo  />
         <S.Form>
         <View>
         <Fumi
@@ -108,7 +103,6 @@ export const RegisterPointScreen = () => {
             iconName={'location'}
             iconColor={'#2EE3AA'}
             iconSize={20}
-            iconWidth={40}
             inputPadding={16}
         />
         <Fumi
@@ -122,7 +116,6 @@ export const RegisterPointScreen = () => {
             iconName={'road'}
             iconColor={'#2EE3AA'}
             iconSize={20}
-            iconWidth={40}
             inputPadding={16}
         />
         <Fumi
@@ -137,7 +130,6 @@ export const RegisterPointScreen = () => {
             iconName={'md-location'}
             iconColor={'#2EE3AA'}
             iconSize={20}
-            iconWidth={40}
             inputPadding={16}
         />
         <Fumi
@@ -151,7 +143,6 @@ export const RegisterPointScreen = () => {
             iconName={'recycle'}
             iconColor={'#2EE3AA'}
             iconSize={20}
-            iconWidth={40}
             inputPadding={16}
         /></View>
 
