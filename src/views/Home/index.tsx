@@ -17,8 +17,6 @@ function getDistanceFromLatLonInKm(position1:any, position2:any) {
           * Math.cos(deg2rad(position1.latitude))
           * Math.sin(dLng / 2) * Math.sin(dLng / 2),
       c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-      console.log(a)
-      console.log(c)
   return ((R * c).toFixed(2));
 }
 

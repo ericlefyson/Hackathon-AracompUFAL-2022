@@ -17,6 +17,7 @@ import {NearbyPoints} from './src/views/NearbyPointsNavigator/index'
 import {LinearGradient} from 'react-native-linear-gradient'
 import { ThemeColors } from 'react-navigation';
 import { LocationsProvider } from './src/hooks/Locations'
+import Toast from 'react-native-toast-message';
 
 
 const Tab = createBottomTabNavigator();
@@ -80,6 +81,7 @@ export default function App() {
   </Drawer.Navigator> */}
         <View onLayout={onLayoutRootView}>
         </View>
+
         <Tab.Navigator  initialRouteName='Mapa' screenOptions={({ route }) => ({
           tabBarIcon: ({ color, size }) => {
             let iconName;

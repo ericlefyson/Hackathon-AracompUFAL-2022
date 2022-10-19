@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Text, View } from 'react-native';
 import * as S from './style'
-import { List } from '../../components'
+import { List,  } from '../../components'
 import imageURL from '../../../assets/logo.png'
 import { useLocations } from '../../hooks/Locations'
 
